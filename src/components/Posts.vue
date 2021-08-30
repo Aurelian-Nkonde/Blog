@@ -25,7 +25,9 @@
                     <div class="py-6 px-3">
                         <h1 class="font-serif text-lg pb-3">19 August 2021</h1>
                         <h1 class="font-serif text-xl tracking-wide pb-6">Lorem ipsum dolor sit amet Lorem ipsum dolor sit.</h1>
-                        <a href="#" class="border-2 text-black border-gray-500 py-2 px-10 transition ease-linear duration-100 hover:bg-black hover:text-white">Read more</a>
+                        <p class="border-2 text-center text-black border-gray-500 py-2 px-10 transition ease-linear duration-100 hover:bg-black hover:text-white">
+                            <router-link to="/info">read more</router-link>
+                        </p>
                     </div>
                 </div>
             </div>

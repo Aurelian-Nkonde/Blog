@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Contact from "../views/Contact.vue";
 import Posts from "../views/posts/Posts.vue";
 import CreatePosts from "../views/posts/CreatePosts.vue";
+import DetailPosts from "../views/posts/Detail.vue";
 import Login from "../views/auth/Login.vue";
 import Signup from "../views/auth/Signup.vue";
 
@@ -41,6 +42,11 @@ const routes = [
     path: "/create",
     name: "CreatePosts",
     component: CreatePosts,
+  },
+  {
+    path: "/info",
+    name: "DetailPosts",
+    component: DetailPosts,
   }
 ];
 
