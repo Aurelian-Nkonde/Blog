@@ -16,6 +16,16 @@
          </div>
 
 
+        <div class="py-10">
+            <div class="" v-if="postslength > 0">
+                <h1 class="font-serif text-xl text-gray-500">{{postslength}} posts available</h1>
+            </div>
+            <div class="" v-else>
+                <p class="font-serif text-xl text-red-500">No posts at the moment</p>
+            </div>
+        </div>
+
+
          <!-- search and filter here mybe -->
 
         <div class="grid grid-cols-3 gap-6 my-20">
@@ -42,44 +52,22 @@
 
 
 <script>
+import {mapGetters} from "vuex";
+
 
 export default {
     name: "Posts",
     data: () => {
         return {
             isAdmin: true,
-            posts: [
-            {
-                id: 0,
-                title: "Lorem ipsum dolor sit, amet consectetur",
-                paragraphy: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur distinctio excepturi suscipit doloremque tempore, ab laboriosam at modi porro non assumenda, reprehenderit saepe deserunt minus praesentium explicabo dicta illo amet!",
-                cover: "../assets/oops.jpg",
-            },
-            {
-                id: 0,
-                title: "Lorem ipsum dolor sit, amet consectetur",
-                paragraphy: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur distinctio excepturi suscipit doloremque tempore, ab laboriosam at modi porro non assumenda, reprehenderit saepe deserunt minus praesentium explicabo dicta illo amet!",
-                cover: "../assets/oops.jpg",
-            },
-                {
-                id: 0,
-                title: "Lorem ipsum dolor sit, amet consectetur",
-                paragraphy: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur distinctio excepturi suscipit doloremque tempore, ab laboriosam at modi porro non assumenda, reprehenderit saepe deserunt minus praesentium explicabo dicta illo amet!",
-                cover: "../assets/oops.jpg",
-            },
-                        {
-                id: 0,
-                title: "Lorem ipsum dolor sit, amet consectetur",
-                paragraphy: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur distinctio excepturi suscipit doloremque tempore, ab laboriosam at modi porro non assumenda, reprehenderit saepe deserunt minus praesentium explicabo dicta illo amet!",
-                cover: "../assets/oops.jpg",
-            },
-                {
-                id: 0,
-                title: "Lorem ipsum dolor sit, amet consectetur",
-                paragraphy: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur distinctio excepturi suscipit doloremque tempore, ab laboriosam at modi porro non assumenda, reprehenderit saepe deserunt minus praesentium explicabo dicta illo amet!",
-                cover: "../assets/oops.jpg",
-            },
-            ]
+        }
+    },
+    computed: {
+        ...mapGetters({
+            posts: 'posts',
+        }),
+        postslength(){
+            return this.posts.length
         }
     }
 }

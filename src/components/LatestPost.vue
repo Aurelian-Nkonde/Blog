@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto py-20">
      <div class="max-w-4xl mx-auto">
-       <h1 class="font-serif text-3xl text-gray-600 tracking-wide pb-8">Latest posts..</h1>
+       <h1 class="font-serif text-3xl text-gray-600 tracking-wide pb-8">Must Read posts..</h1>
        <div class="pb-20">
          <button class="py-3 px-10 bg-black text-white transition ease-linear duration-100 hover:bg-gray-500">
            <router-link to="/posts">View all articles</router-link>
