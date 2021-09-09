@@ -7,7 +7,7 @@
            <p class="font-serif text-white text-lg cursor-pointer">Facebook</p>
            <p class="font-serif text-white text-lg cursor-pointer">LinkedLn</p>
          </div>
-         <h1 class="font-sans text-2xl text-red-400 text-center pb-6">2021</h1>
+         <h1 class="font-sans text-2xl text-red-200 text-center pb-6">2021</h1>
          <h1 class="font-sans text-xl text-white text-center pb-6">made by <span class="text-red-400 cursor-pointer">Programmer</span></h1>
        </div>
      </div>
